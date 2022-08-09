@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ReactChild, ReactFragment, ReactPortal } from 'react'
 
 import { DarkLayout } from '../components/layouts/DarkLayout'
 import { MainLayout } from '../components/layouts/MainLayout'
@@ -22,7 +23,7 @@ export default function AboutPage() {
 }
 
 
-AboutPage.getLayout = function getLayout( page ) {
+AboutPage.getLayout = function getLayout( page: JSX.Element ) {
   return (
     <MainLayout>
       <DarkLayout>
