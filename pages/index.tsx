@@ -1,12 +1,13 @@
 
 import Link from 'next/link'
+import { Layout } from '../components/layouts'
 import { MainLayout } from '../components/layouts/MainLayout'
 
 
 export default function HomePage() {
 
   return (
-    <MainLayout>
+    <Layout title={'Listado de Pokémons'}>
         <h1>Home Page</h1>
         
         <h1 className="title">
@@ -18,6 +19,6 @@ export default function HomePage() {
           Get started by editing{' '}
           <code className={'code'}>pages/index.js</code>
         </p>
-    </MainLayout>
+    </Layout>
   )
 }
